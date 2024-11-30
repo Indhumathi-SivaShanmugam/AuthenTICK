@@ -50,6 +50,10 @@ This extension will assist users in navigating the vast pool of online content w
 - Articles related to claims are fetched and analyzed based on keywords for false or true claims.
 - The next step is to build the browser extension interface and integrate real-time claim detection.
 
+  ---
+  ![image](https://github.com/user-attachments/assets/0eee25c4-2cec-4a8d-a60c-3cbc1e683b5c)
+
+
 ---
 
 ## Challenges Faced
