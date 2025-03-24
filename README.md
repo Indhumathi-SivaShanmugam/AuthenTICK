@@ -1,80 +1,48 @@
+# AuthenTick - Fact Checking Browser Extension
 
-# AuthenTICK-Fake News Detection and Credibility Checker
+AuthenTick is a browser extension that helps users verify the credibility of news articles and claims found online. It integrates multiple fact-checking sources to provide real-time verification.
 
-## Problem Statement
-In today's digital age, misinformation spreads rapidly, leading to confusion and distrust. With the rise of fake news, there is an increasing need for tools that can assist users in discerning credible information from false claims. This project aims to address this issue by providing a tool that verifies claims and guides users toward reliable sources.
+## Features
+- **Fact Verification**: Uses Google Fact Check API, Snopes scraping, and News API to validate claims.
+- **Browser Integration**: Works as an extension to analyze selected text or articles.
+- **Multi-Source Comparison**: Aggregates results from different sources to provide a comprehensive analysis.
+- **User-Friendly UI**: Simple and interactive design for seamless user experience.
 
----
+## Technologies Used
+- **Backend**: Flask
+- **Frontend**: JavaScript (for browser extension integration)
+- **APIs Used**:
+  - Google Fact Check API
+  - Snopes (scraped data)
+  - News API
 
-## Project Idea
-The idea is to create a **browser extension** that:
-- Reads out and highlights false claims detected in online articles.
-- Provides a **credibility score** to help users assess the trustworthiness of a claim.
-- Suggests **authenticated articles** or sources for further reference and clarification.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/AuthenTick.git
+   cd AuthenTick
+   ```
+2. Set up a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On macOS/Linux
+   venv\Scripts\activate     # On Windows
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the Flask server:
+   ```bash
+   python app.py
+   ```
+5. Load the extension in your browser:
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable Developer Mode
+   - Click on "Load unpacked" and select the `extension` folder
 
-This extension will assist users in navigating the vast pool of online content while ensuring they consume verified and accurate information.
-
----
-
-## Approach
-1. **Claim Verification**: 
-   - Use APIs to fetch related articles and determine whether a claim is credible or false based on specific keywords and context.
-   - Assign a credibility score based on the consistency of the articles retrieved.
-
-2. **Extension Functionality**:
-   - Highlight detected false claims on web pages in real-time.
-   - Provide a pop-up or sidebar displaying the credibility score and alternative, authentic articles.
-
-3. **User Experience**:
-   - A seamless and intuitive UI for users to verify claims without leaving the web page they are on.
-
-4. **Future Enhancements**:
-   - Incorporate NLP models for more accurate detection.
-   - Add voice reading features for accessibility.
-
----
-
-## Tech Stack
-- **Frontend**: React.js (for the extension interface)
-- **Backend**: Node.js and Express.js
-- **API**: NewsAPI (for fetching relevant articles)
-- **Styling**: Tailwind CSS
-- **Additional Tools**:
-  - Axios (for API calls)
-  - NLP libraries (planned for future updates)
-
----
-
-## Progress / Current Status
-- The project is in its **initial stages**.
-- Currently working on verifying headline claims using the **NewsAPI**.
-- Articles related to claims are fetched and analyzed based on keywords for false or true claims.
-- The next step is to build the browser extension interface and integrate real-time claim detection.
-
-  ---
-  ![image](https://github.com/user-attachments/assets/0eee25c4-2cec-4a8d-a60c-3cbc1e683b5c)
-
-
----
-
-## Challenges Faced
-1. **Relevance of Articles**: 
-   - Not all fetched articles are directly relevant to the claims, leading to ambiguous results.
-
-2. **Keyword Matching**:
-   - The current logic relies heavily on keywords, which can result in false positives or negatives.
-
-3. **API Limitations**:
-   - Limited API request quotas can hinder testing and development progress.
-
-4. **Integration with Browser Extension**:
-   - Adapting the project to work seamlessly as an extension while maintaining real-time performance.
-
----
-
-## Future Goals
-- Refine the claim verification process using advanced machine learning models.
-- Introduce a user-friendly interface for highlighting and presenting the credibility score.
-- Build accessibility features like voice-based claim reading.
-- Expand the database of authentic sources for better recommendations.
----
+## Future Scope
+- **Credibility Score**: Implement a scoring system for evaluating article reliability.
+- **AI-Based Detection**: Use machine learning models for enhanced fake news detection.
+- **More Fact-Checking Sources**: Integrate additional fact-checking platforms.
+- **User Feedback Mechanism**: Allow users to contribute to credibility ratings.
