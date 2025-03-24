@@ -19,7 +19,7 @@ AuthenTick is a browser extension that helps users verify the credibility of new
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/AuthenTick.git
+   git clone https://github.com/Indhumathi-SivaShanmugam/AuthenTICK.git
    cd AuthenTick
    ```
 2. Set up a virtual environment:
