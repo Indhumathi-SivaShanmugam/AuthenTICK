@@ -1,4 +1,4 @@
-# AuthenTick - Fact Checking Browser Extension
+# AuthenTICK - Fact Checking Browser Extension
 
 AuthenTick is a browser extension that helps users verify the credibility of news articles and claims found online. It integrates multiple fact-checking sources to provide real-time verification.
 
